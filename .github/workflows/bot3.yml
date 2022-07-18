@@ -107,6 +107,7 @@ jobs:
           cd Bot3/build/libs
           git clone --recurse-submodules https://ZualoliconVN:${{ secrets.GH_TOKEN }}@github.com/${{ secrets.GSI }} ErfanGSIs
           cd ErfanGSIs && chmod 777 url2GSI.sh
+          cd ErfanGSIs && bash update.sh
           pip3 install wheel setuptools
           pip3 install backports.lzma docopt zstandard bsdiff4 protobuf pycrypto
           sudo pip3 install --upgrade protobuf
