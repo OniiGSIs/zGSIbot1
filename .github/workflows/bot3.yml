@@ -42,7 +42,7 @@ jobs:
         continue-on-error: true
         run: |
           mkdir tmp && cd tmp
-          git clone https://github.com/OniiGSIs/Bot3-Workflow Bobot
+          git clone https://github.com/OniiGSIs/Bot3-Zone Bobot
 
       - name: Install tools/packages
         continue-on-error: true
@@ -84,7 +84,7 @@ jobs:
           echo "bot-master=1428791481" >> configs.prop
           echo "privateChat=-1001627235241" >> configs.prop
           echo "requestChat=-1001627235241" >> configs.prop
-          echo "publicChannel=OniiGSIVN" >> configs.prop
+          echo "publicChannel=ZualoliconGSI" >> configs.prop
           echo "bot-sf-pass=${{ secrets.SFPASS }}" >> sf-creds.prop
           echo "bot-sf-proj=zualolicongsis" >> sf-creds.prop
           echo "bot-sf-user=zualolicongsis" >> sf-creds.prop
