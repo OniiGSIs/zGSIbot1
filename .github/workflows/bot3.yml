@@ -111,7 +111,13 @@ jobs:
           pip3 install wheel setuptools
           pip3 install backports.lzma docopt zstandard bsdiff4 protobuf pycrypto
           sudo pip3 install --upgrade protobuf
-
+          git clone --recurse-submodules https://github.com/rahulkhatri137/SGSIs -b both SGSIs
+          sudo chmod -R 0777 SGSIs
+          cd SGSIs
+          git clone --recurse-submodules https://github.com/rahulkhatri137/SGSIs -b main11 11
+          git clone --recurse-submodules https://github.com/rahulkhatri137/SGSIs -b main 12
+          sudo chmod -R 0777 ./
+          sudo bash 12/setup.sh
       - name: Run the Bot³+t
         continue-on-error: true
         timeout-minutes: 315
