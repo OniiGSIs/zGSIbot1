@@ -10,7 +10,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     timeout-minutes: 525600
 
     steps:
@@ -42,7 +42,7 @@ jobs:
         continue-on-error: true
         run: |
           mkdir tmp && cd tmp
-          git clone https://github.com/OniiGSIs/Bot3-Zone Bobot
+          git clone https://github.com/OniiGSIs/zGSIbot1 Bobot
 
       - name: Install tools/packages
         continue-on-error: true
